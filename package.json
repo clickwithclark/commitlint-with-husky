@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "sh -c \"npx --no-install husky install && npx --no-install husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'\"",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable "
   },
   "keywords": [],
   "author": "",
