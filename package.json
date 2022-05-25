@@ -1,19 +1,29 @@
 {
-  "name": "commitlint-and-husky",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "commitlint-with-husky",
+  "version": "1.0.10",
+  "description": "No-Sweat™ commitlint and husky Setup",
+  "main": "./bin/index.js",
+  "bin": "./bin/index.js",
+  "files": [
+    "bin",
+    ".husky",
+    ".commitlintrc.json"
+  ],
   "scripts": {
-    "postinstall": "sh -c \"npx --no-install husky install && npx --no-install husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'\"",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable "
+    "postpublish": "pinst --enable"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "commitlint",
+    "husky"
+  ],
+  "author": "clickwithclark",
+  "license": "MIT",
+
   "dependencies": {
     "@commitlint/cli": "17.0.1",
     "@commitlint/config-conventional": "17.0.0",
+    "chalk": "^4.1.2",
     "husky": "8.0.1",
     "pinst": "3.0.0"
   }
