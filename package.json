@@ -3,6 +3,7 @@
   "version": "1.0.10",
   "description": "No-Sweat™ commitlint and husky Setup",
   "main": "./bin/index.js",
+  "type": "module",
   "bin": "./bin/index.js",
   "files": [
     "bin",
