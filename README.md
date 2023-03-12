@@ -14,20 +14,17 @@ You are very welcome to overwrite any of these settings, or just fork the entire
 
 1. If you don't already have a `package.json` file, create one with `npm init`.
 
-2. Then ensure you have a .git folder create one with `git init`
+2. Then ensure you have a .git folder create one with `git init`.
 
 3. In the root of your project execute the following command in your terminal:
 
 ```
 npm i commitlint-with-husky --save-dev
 ```
-4. Now add the configuration files to your project by running:
+The  configuration files will be added to your project by the postinstall script:
 
-```
-npx commitlint-with-husky
-```
 
-5. You can see in your package.json there are now 2 scripts added to your script property if you should need it.
+4. You can see in your package.json there are now 2 scripts added to your script property if you should need it. You can install ```pinst``` on your own.
 
 ```json
   "scripts": {
@@ -38,7 +35,7 @@ npx commitlint-with-husky
   },
 ```
 
-## NOTE
+## Notice
 
 I work on a windows machine, to the best of my knowledge the package works on all platforms, if not please don't hesitate to let me know.
 
