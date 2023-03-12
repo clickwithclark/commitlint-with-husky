@@ -18,6 +18,7 @@ const chalk = require("chalk");
     //append pinst scripts to user scripts in package.json
     userPkg.scripts.postpublish ="pinst --disable" ;
     userPkg.scripts.prepublishOnly ="pinst --enable" ;
+    userPkg.scripts.prepublishOnly ="pinst --enable" ;
 
     //update package.json with merged scripts
   try {

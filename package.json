@@ -13,7 +13,8 @@
   "repository": "git@github.com:clickwithclark/commitlint-with-husky.git",
   "scripts": {
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "postinstall": "npx --yes commitlint-with-husky"
   },
   "keywords": [
     "commitlint",
