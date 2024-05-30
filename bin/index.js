@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 
-const process = require("process");
-const fs = require("fs");
-const path = require("path");
-const { exec } = require("child_process");
-const chalk = require("chalk");
+import process from "process";
+import fs from "fs";
+import path from "path";
+import { exec } from "child_process";
+import chalk from "chalk";
 
+import { fileURLToPath } from 'url';
+import { createRequire } from 'module';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const require = createRequire(import.meta.url);
 (function init() {
   const userDirectory = process.env.INIT_CWD;
   let userPkg = require(path.resolve(userDirectory, "./package.json"));

@@ -24,14 +24,14 @@ npm i commitlint-with-husky --save-dev
 The  configuration files will be added to your project by the postinstall script:
 
 
-4. You can see in your package.json there are now 2 scripts added to your script property if you should need it. You can install ```pinst``` on your own.
+4. You can see in your package.json there are now 2 scripts added to your script property if you should need it. You can uninstall ```pinst``` if you don't need it.
 
 ```json
   "scripts": {
   "your other scripts":"..."
 
-    "postpublish": "pinst --disable",
-    "prepublishOnly": "pinst --enable "
+    "postpublish": "pinst --enable "
+    "prepublishOnly": "pinst --disable",
   },
 ```
 
